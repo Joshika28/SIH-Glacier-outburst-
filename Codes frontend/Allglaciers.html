@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>States with Glaciers in India</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            width: 300px;
+            margin: 20px auto;
+        }
+        .dropdown-select {
+            background-color: #292929;
+            color: #dcdcdc;
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .dropdown-select:hover {
+            background-color: #383838;
+        }
+        .glacier-list {
+            display: none;
+            margin-top: 10px;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .glacier-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .glacier-list li {
+            background-color: #444;
+            padding: 8px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .glacier-list li:hover {
+            background-color: #555;
+        }
+        .dropdown-container {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .dropdown-container.active .glacier-list {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>States with Glaciers in India</h1>
+    
+    <!-- Dropdown for Himachal Pradesh -->
+    <div class="dropdown-container">
+        <button class="dropdown-select">Himachal Pradesh</button>
+        <div class="glacier-list">
+            <ul>
+                <li>Chandra Taal Glacier</li>
+                <li>Bara Shigri Glacier</li>
+                <li>Miyar Glacier</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Dropdown for Uttarakhand -->
+    <div class="dropdown-container">
+        <button class="dropdown-select">Uttarakhand</button>
+        <div class="glacier-list">
+            <ul>
+                <li>Gangotri Glacier</li>
+                <li>Pindari Glacier</li>
+                <li>Khatling Glacier</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Dropdown for Sikkim -->
+    <div class="dropdown-container">
+        <button class="dropdown-select">Sikkim</button>
+        <div class="glacier-list">
+            <ul>
+                <li>Kangchenjunga Glacier</li>
+                <li>Zemu Glacier</li>
+                <li>Lhonak Glacier</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Dropdown for Jammu and Kashmir -->
+    <div class="dropdown-container">
+        <button class="dropdown-select">Jammu and Kashmir</button>
+        <div class="glacier-list">
+            <ul>
+                <li>Siachen Glacier</li>
+                <li>Drang Drung Glacier</li>
+                <li>Amarnath Glacier</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Dropdown for Arunachal Pradesh -->
+    <div class="dropdown-container">
+        <button class="dropdown-select">Arunachal Pradesh</button>
+        <div class="glacier-list">
+            <ul>
+                <li>Namcha Barwa Glacier</li>
+                <li>Pankang Teng Glacier</li>
+                <li>Dungkar Glacier</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Add functionality to toggle the glacier lists
+        document.querySelectorAll('.dropdown-select').forEach(button => {
+            button.addEventListener('click', () => {
+                const dropdownContainer = button.parentElement;
+                dropdownContainer.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glacier Monitoring Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+        .glacier-button {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: #292929;
+            color: #ffffff;
+            font-size: 1.3em;
+            font-weight: bold;
+            display: inline-block;
+            text-align: center;
+            line-height: 250px;
+            margin: 20px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+        }
+        .glacier-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+        }
+        .glacier-button:active {
+            transform: scale(1.05);
+        }
+        .oval-button {
+            width: 300px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            font-size: 1.2em;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            line-height: 100px;
+            margin: 30px auto;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+        }
+        .oval-button:hover {
+            background-color: #45a049;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+        }
+        .oval-button:active {
+            background-color: #388e3c;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+            color: #666;
+            background-color: #2a2a2a;
+            margin-top: 40px;
+            border-top: 1px solid #444;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Glacier Monitoring Dashboard</h1>
+        <p>Select a glacier to view its monitoring data:</p>
+
+        <!-- Glacier Buttons -->
+        <a href="chhota.html" class="glacier-button">Chhota Shigri Glacier</a>
+        <a href="Gangotri.html" class="glacier-button">Gangotri Glacier</a>
+        <a href="Siachen.html" class="glacier-button">Siachen Glacier</a>
+        <a href="Zemu.html" class="glacier-button">Zemu Glacier</a>
+        <a href="Milam.html" class="glacier-button">Milam Glacier</a>
+
+        <!-- Oval Button -->
+        <a href="Allglaciers.html" class="oval-button">View All Glaciers</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Glacier Monitoring &copy; 2024</p>
+    </div>
+
+</body>
+</html>
